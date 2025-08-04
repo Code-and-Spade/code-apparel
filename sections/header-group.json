@@ -17,7 +17,7 @@
         "announcement_f69jjK": {
           "type": "_announcement",
           "settings": {
-            "text": "signup for emails and text to get 10% off your first order",
+            "text": "Signup for emails and text to get 10% off your first order",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
