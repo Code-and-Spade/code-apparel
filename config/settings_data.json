@@ -9,6 +9,8 @@
  */
 {
   "current": {
+    "logo": "shopify://shop_images/logo.svg",
+    "logo_inverse": "shopify://shop_images/inverse.svg",
     "type_body_font": "rethink_sans_n4",
     "type_subheading_font": "rethink_sans_n5",
     "type_heading_font": "rethink_sans_n6",
@@ -38,7 +40,7 @@
     "type_font_h6": "subheading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
-    "page_width": "narrow",
+    "page_width": "normal",
     "badge_position": "top-right",
     "badge_corner_radius": 100,
     "badge_sale_color_scheme": "scheme-1",
