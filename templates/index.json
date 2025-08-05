@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>It's not just about fitting in,<br/>It's a wardrobe that fits you</p>",
+            "text": "<p><strong>It's not just about fitting in,<br/>It's a wardrobe that fits you</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
