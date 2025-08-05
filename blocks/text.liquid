@@ -221,6 +221,31 @@
     },
     {
       "type": "select",
+      "id": "font_weight",
+      "label": "font thickness",
+      "options": [
+        {
+          "value": "400",
+          "label": "normal"
+        },
+        {
+          "value": "500",
+          "label": "medium"
+        },
+        {
+          "value": "600",
+          "label": "semi bold"
+        },
+        {
+          "value": "700",
+          "label": "bold"
+        }
+      ],
+      "default": "400",
+      "visible_if": "{{ block.settings.type_preset == 'custom' }}"
+    },
+    {
+      "type": "select",
       "id": "line_height",
       "label": "t:settings.line_height",
       "options": [
