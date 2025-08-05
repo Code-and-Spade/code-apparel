@@ -7,7 +7,14 @@ h1, h2, h3, h4, h5, h6{
 header-menu .overflow-menu::part(list){
     gap: 75px;
 }
+.header-actions__action svg{
+    width: 24px;
+    height: 24px;
+}
+.header-actions__action svg path{
+    stroke-path: 1px;
+}
 .header-actions__cart-icon .cart-bubble__text, .cart-drawer__heading .cart-bubble__text{
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 700!important;
 }
