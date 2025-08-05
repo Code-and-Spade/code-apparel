@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Your code of confidence</h1>",
+            "text": "<h1>Your code<br/>of confidence</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
