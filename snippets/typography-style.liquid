@@ -36,7 +36,9 @@
     {%- if settings.font_size != blank -%}
       --font-size: {{ settings.font_size }};
     {%- endif -%}
-    {%- if settings.weight != blank -%}
+    {%- if settings.font_weight != blank -%}
+      --font-weight: {{ settings.font_weight }};
+    {%- elsif settings.weight != blank -%}
       --font-weight: {{ settings.weight }};
     {% else %}
       --font-weight: {{ settings.font | replace: 'family', 'weight' }};
