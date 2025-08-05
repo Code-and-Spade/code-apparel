@@ -48,7 +48,7 @@
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "2rem",
+            "font_size": "1.75rem",
             "line_height": "tight",
             "letter_spacing": "normal",
             "case": "none",
