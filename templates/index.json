@@ -167,8 +167,9 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
+                "cust_img": "shopify://shop_images/casual.png",
                 "collection": "casual",
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -231,9 +232,9 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
-                "cust_img": "shopify://shop_images/9R5A5873copy_18e89798-ff62-46dc-8e4b-aecee17e5ae9.jpg",
+                "cust_img": "shopify://shop_images/dressy.png",
                 "collection": "",
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
