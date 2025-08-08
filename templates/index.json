@@ -167,7 +167,6 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
-                "cust_img": "shopify://shop_images/casual.png",
                 "collection": "",
                 "image_ratio": "portrait",
                 "toggle_overlay": false,
