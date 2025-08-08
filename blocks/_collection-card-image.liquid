@@ -16,6 +16,10 @@
 
 {% liquid
   assign image_source = block.settings.cust_img
+  if image_source == blank
+    assign image_source = collection.image
+  
+  endif
  
 
  
