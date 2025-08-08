@@ -167,7 +167,7 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
-                "collection": "",
+                "collection": "casual",
                 "image_ratio": "portrait",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
