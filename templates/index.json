@@ -125,7 +125,7 @@
           "type": "collection-card",
           "name": "t:names.collection_card",
           "settings": {
-            "collection": "",
+            "collection": "casual",
             "placement": "on_image",
             "horizontal_alignment": "flex-end",
             "vertical_alignment": "flex-end",
@@ -167,6 +167,7 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
+                "cust_img": "shopify://shop_images/casual.png",
                 "collection": "",
                 "image_ratio": "portrait",
                 "toggle_overlay": false,
