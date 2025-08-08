@@ -15,10 +15,14 @@
 -%}
 
 {% liquid
-  assign image_source = collection.image
+  assign image_source = block.settings.cust_img 
   if image_source == blank
+    assign image_source = collection.image
+  elsif collection.image == blank
     assign image_source = collection.products.first.featured_image
   endif
+
+ 
 
   assign ratio = 1
 
@@ -129,6 +133,11 @@
   "name": "t:names.collection_card_image",
   "tag": null,
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "cust_img",
+      "label": "Image"
+    },
     {
       "type": "collection",
       "id": "collection",
