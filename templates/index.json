@@ -873,20 +873,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_qLCTNF": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
+            "text_UQ7DDH": {
+              "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h2>Code essentials</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "custom",
                 "font": "var(--font-heading--family)",
-                "font_size": "1rem",
+                "font_size": "1.75rem",
+                "font_weight": "500",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "loose",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
@@ -916,7 +917,7 @@
             }
           },
           "block_order": [
-            "product_list_text_qLCTNF",
+            "text_UQ7DDH",
             "product_list_button_N8pfAg"
           ]
         },
