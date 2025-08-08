@@ -15,12 +15,8 @@
 -%}
 
 {% liquid
-  assign image_source = block.settings.cust_img.url 
-  if image_source == blank
-    assign image_source = collection.image
-  elsif collection.image == blank
-    assign image_source = collection.products.first.featured_image
-  endif
+  assign image_source = block.settings.cust_img
+ 
 
  
 
