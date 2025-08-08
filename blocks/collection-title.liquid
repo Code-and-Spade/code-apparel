@@ -4,7 +4,10 @@
   {% assign text = 'placeholders.collection_title' | t %}
   {% assign collection_title = '<p>' | append: text | append: '</p>' %}
   {% render 'text', fallback_text: collection_title, block: block %}
-{% elsif block.settings.collection != blank %}
+{% elsif block.settings.btn_txt != blank %}
+  {% assign collection_title = '<p>' | append: block.settings.btn_txt | append: '</p>' %}
+  {% render 'text', fallback_text: collection_title, block: block %}
+{% else  %}
   {% assign collection_title = '<p>' | append: block.settings.collection.title | append: '</p>' %}
   {% render 'text', fallback_text: collection_title, block: block %}
 {% endif %}
@@ -14,6 +17,11 @@
   "name": "t:names.collection_title",
   "tag": null,
   "settings": [
+    {
+      "type": "text",
+      "id": "btn_txt",
+      "label": "Button text"
+    },
     {
       "type": "collection",
       "id": "collection",
