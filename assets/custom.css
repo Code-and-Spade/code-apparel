@@ -2,6 +2,12 @@
 h1, h2, h3, h4, h5, h6{
     font-family: "owners-xwide", sans-serif!important;
 }
+.btn-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 6px;
+}
 
 /* HEADER */
 header-menu .overflow-menu::part(list){
