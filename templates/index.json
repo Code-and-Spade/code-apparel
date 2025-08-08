@@ -138,29 +138,18 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_cDWgq6": {
-              "type": "collection-title",
+            "button_F9Txnd": {
+              "type": "button",
+              "name": "t:names.button",
               "settings": {
-                "btn_txt": "Shop Casual",
-                "collection": "{{ closest.collection }}",
+                "label": "Shop Casual",
+                "link": "shopify://collections/casual",
+                "open_in_new_tab": false,
+                "style_class": "button",
                 "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ae9d94",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             },
@@ -184,7 +173,7 @@
             }
           },
           "block_order": [
-            "collection_title_cDWgq6"
+            "button_F9Txnd"
           ]
         },
         "collection_card_fVg3gz": {
@@ -204,29 +193,18 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_KgtGJt": {
-              "type": "collection-title",
+            "button_Cg8Yid": {
+              "type": "button",
+              "name": "t:names.button",
               "settings": {
-                "btn_txt": "Shop Dressy",
-                "collection": "{{ closest.collection }}",
+                "label": "Shop Dressy",
+                "link": "shopify://collections/dressy",
+                "open_in_new_tab": false,
+                "style_class": "button",
                 "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ae9d94",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             },
@@ -250,7 +228,7 @@
             }
           },
           "block_order": [
-            "collection_title_KgtGJt"
+            "button_Cg8Yid"
           ]
         }
       },
