@@ -31,7 +31,7 @@
 
   {%- if block.settings.icon_type == 'image' -%}
       {%- if block.settings.image != blank -%}
-          <img src="{{ block.settings.image.url }}" />
+          <img {{ block.settings.image }} />
       {%- endif -%}
   {%- else -%}
       {%- if block.settings.icon != blank -%}
