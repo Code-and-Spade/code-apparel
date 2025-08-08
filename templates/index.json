@@ -231,7 +231,8 @@
               "type": "_collection-card-image",
               "static": true,
               "settings": {
-                "collection": "{{ closest.collection }}",
+                "cust_img": "shopify://shop_images/9R5A5873copy_18e89798-ff62-46dc-8e4b-aecee17e5ae9.jpg",
+                "collection": "",
                 "image_ratio": "portrait",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
