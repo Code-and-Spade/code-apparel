@@ -804,7 +804,7 @@
       ],
       "name": "t:names.custom_section",
       "settings": {
-        "custom_class": "",
+        "custom_class": "code-points-sec",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
