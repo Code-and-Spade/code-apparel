@@ -7,6 +7,33 @@
   "tag": null,
   "settings": [
     {
+        "type": "radio",
+        "id": "icon_type",
+        "label": "Use image or text for Icon?",
+        "options": [
+        {
+          "value": "text",
+          "label": "text"
+        },
+        {
+          "value": "image",
+          "label": "image"
+        }
+        ],
+        "default": "text"
+    },
+    {
+        "type": "image_picker",
+        "id" : "image",
+        "label" : "t:sections.image-banner.blocks.image.settings.content.label__15"
+    },
+    {
+        "type": "textarea",
+        "id" : "icon",
+        "label" : "t:settings_schema.typography.settings.typography.icon",
+        "info" : "Go to this link [Find your Icon](https://fontawesome.com/v5.15/icons?d=gallery&p=2). Find the icon you want, then copy the SVG code and paste it here."
+    },
+    {
       "type": "text",
       "id": "label",
       "label": "t:settings.label",
