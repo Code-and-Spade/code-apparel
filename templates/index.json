@@ -315,7 +315,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 24,
+            "gap": 0,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -327,7 +327,7 @@
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "solid",
+            "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
@@ -352,9 +352,9 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -366,7 +366,7 @@
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
+                "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
@@ -374,10 +374,10 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
               "blocks": {
                 "icon_RHzFmX": {
@@ -385,7 +385,8 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/fit.svg",
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -395,17 +396,17 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<h3>Fit-focused</h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "font_weight": "400",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "0.875rem",
+                    "font_weight": "500",
                     "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
+                    "letter_spacing": "loose",
+                    "case": "uppercase",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -422,15 +423,15 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>Tailored exclusively for plus-size proportions</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "font_weight": "400",
-                    "line_height": "normal",
+                    "line_height": "loose",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -452,7 +453,7 @@
                 "text_ER7tBC"
               ]
             },
-            "group_hqDyFp": {
+            "group_4R7kre": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -463,9 +464,9 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -477,7 +478,7 @@
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
+                "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
@@ -485,38 +486,39 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
               "blocks": {
-                "icon_hBrGtP": {
+                "icon_3KB8Va": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/expert.svg",
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
                   "blocks": {}
                 },
-                "text_GeLj4k": {
+                "text_JDGYn8": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<h3>Easy to wear & pair</h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "font_weight": "400",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "0.875rem",
+                    "font_weight": "500",
                     "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
+                    "letter_spacing": "loose",
+                    "case": "uppercase",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -529,19 +531,19 @@
                   },
                   "blocks": {}
                 },
-                "text_7X7fP7": {
+                "text_yeKGnQ": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>Staple pieces that work together and with everything you own!</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "font_weight": "400",
-                    "line_height": "normal",
+                    "line_height": "loose",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -558,12 +560,12 @@
                 }
               },
               "block_order": [
-                "icon_hBrGtP",
-                "text_GeLj4k",
-                "text_7X7fP7"
+                "icon_3KB8Va",
+                "text_JDGYn8",
+                "text_yeKGnQ"
               ]
             },
-            "group_dUE4FY": {
+            "group_tAhJ9x": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -574,9 +576,9 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -588,7 +590,7 @@
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
+                "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
@@ -596,38 +598,39 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
               "blocks": {
-                "icon_CRiqkr": {
+                "icon_XnxykJ": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/modest.svg",
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
                   "blocks": {}
                 },
-                "text_XEmn4G": {
+                "text_kAq89j": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<h3>Modest by design</h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "font_weight": "400",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "0.875rem",
+                    "font_weight": "500",
                     "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
+                    "letter_spacing": "loose",
+                    "case": "uppercase",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -640,19 +643,19 @@
                   },
                   "blocks": {}
                 },
-                "text_PQbiXA": {
+                "text_aphEt8": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>Not as an afterthought</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "font_weight": "400",
-                    "line_height": "normal",
+                    "line_height": "loose",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -669,12 +672,12 @@
                 }
               },
               "block_order": [
-                "icon_CRiqkr",
-                "text_XEmn4G",
-                "text_PQbiXA"
+                "icon_XnxykJ",
+                "text_kAq89j",
+                "text_aphEt8"
               ]
             },
-            "group_aUPJDL": {
+            "group_87E7wc": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -685,9 +688,9 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -699,7 +702,7 @@
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
+                "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
@@ -707,38 +710,39 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
               "blocks": {
-                "icon_KaJy8m": {
+                "icon_EtFHGh": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/ready.svg",
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
                   "blocks": {}
                 },
-                "text_EpFUfd": {
+                "text_tNy9hW": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<h3>Real-life ready</h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "font_weight": "400",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "0.875rem",
+                    "font_weight": "500",
                     "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
+                    "letter_spacing": "loose",
+                    "case": "uppercase",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -751,19 +755,19 @@
                   },
                   "blocks": {}
                 },
-                "text_pAeLPJ": {
+                "text_6dBpTn": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>Easy, breatable fabrics you can wash and wear forever</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "font_weight": "400",
-                    "line_height": "normal",
+                    "line_height": "loose",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -780,17 +784,17 @@
                 }
               },
               "block_order": [
-                "icon_KaJy8m",
-                "text_EpFUfd",
-                "text_pAeLPJ"
+                "icon_EtFHGh",
+                "text_tNy9hW",
+                "text_6dBpTn"
               ]
             }
           },
           "block_order": [
             "group_YJj4cF",
-            "group_hqDyFp",
-            "group_dUE4FY",
-            "group_aUPJDL"
+            "group_4R7kre",
+            "group_tAhJ9x",
+            "group_87E7wc"
           ]
         }
       },
