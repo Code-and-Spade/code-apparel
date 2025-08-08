@@ -32,7 +32,7 @@
   {%- if block.settings.icon_type == 'image' -%}
       {%- if block.settings.image != blank -%}
         {%- assign my_img = block.settings.image -%}
-          <img src="{{ my_img | image_url: width: 300 }}" />
+          <img src="{{ my_img | image_url: width: 24 }}" />
       {%- endif -%}
   {%- else -%}
       {%- if block.settings.icon != blank -%}
