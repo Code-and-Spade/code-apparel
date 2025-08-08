@@ -190,7 +190,7 @@
           "type": "collection-card",
           "name": "t:names.collection_card",
           "settings": {
-            "collection": "",
+            "collection": "dressy",
             "placement": "on_image",
             "horizontal_alignment": "flex-end",
             "vertical_alignment": "flex-end",
