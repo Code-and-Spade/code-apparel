@@ -15,10 +15,15 @@
 -%}
 
 {% liquid
-   assign image_source = collection.image
-  if image_source == blank
+  
+  if block.settings.cust_img != blank
+    assign image_source = block.settings.cust_img
+  elsif collection.image != blank
+    assign image_source = collection.image
+  else
     assign image_source = collection.products.first.featured_image
   endif
+
  
 
  
