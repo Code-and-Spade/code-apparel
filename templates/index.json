@@ -141,6 +141,7 @@
             "collection_title_cDWgq6": {
               "type": "collection-title",
               "settings": {
+                "btn_txt": "Shop Casual",
                 "collection": "{{ closest.collection }}",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -206,6 +207,7 @@
             "collection_title_KgtGJt": {
               "type": "collection-title",
               "settings": {
+                "btn_txt": "Shop Dressy",
                 "collection": "{{ closest.collection }}",
                 "width": "fit-content",
                 "max_width": "normal",
