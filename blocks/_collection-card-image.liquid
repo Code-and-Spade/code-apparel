@@ -15,7 +15,7 @@
 -%}
 
 {% liquid
-  assign image_source = block.settings.cust_img 
+  assign image_source = block.settings.cust_img.url 
   if image_source == blank
     assign image_source = collection.image
   elsif collection.image == blank
