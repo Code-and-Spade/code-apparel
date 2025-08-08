@@ -28,6 +28,17 @@
   {{ block.shopify_attributes }}
 >
   {{ block.settings.label }}
+
+  {%- if block.settings.icon_type == 'image' -%}
+      {%- if block.settings.image != blank -%}
+          <img src="{{ block.settings.image }}" />
+      {%- endif -%}
+  {%- else -%}
+      {%- if block.settings.icon != blank -%}
+      <span class="policies-icon">{{ block.settings.icon }}</span>
+      {%- endif -%}
+  {%- endif -%}
+
 </a>
 
 {% stylesheet %}
