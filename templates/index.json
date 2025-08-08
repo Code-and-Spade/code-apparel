@@ -70,6 +70,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
+            "icon_type": "text",
+            "icon": "",
             "label": "Shop A/W25",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
@@ -142,6 +144,9 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
+                "icon_type": "image",
+                "image": "shopify://shop_images/arrow-narrow-right.svg",
+                "icon": "",
                 "label": "Shop Casual",
                 "link": "shopify://collections/casual",
                 "open_in_new_tab": false,
@@ -197,6 +202,8 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
+                "icon_type": "text",
+                "icon": "",
                 "label": "Shop Dressy",
                 "link": "shopify://collections/dressy",
                 "open_in_new_tab": false,
