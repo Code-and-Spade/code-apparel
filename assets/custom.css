@@ -27,3 +27,6 @@ header-menu .overflow-menu::part(list){
 .code-points-area .code-point:nth-child(1), .code-points-area .code-point:nth-child(2), .code-points-area .code-point:nth-child(3){
     border-right: 1px solid #E3DDDA;
 }
+.code-point{
+    min-height: 52px;
+}
