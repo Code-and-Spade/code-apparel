@@ -306,6 +306,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
+            "custom_class": "code-points-area",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "row",
@@ -345,6 +346,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
@@ -457,6 +459,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
@@ -569,6 +572,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
@@ -681,6 +685,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
@@ -956,6 +961,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
