@@ -13,7 +13,7 @@
 
 <div
   class="
-    {% if settings.custom_class != blank %} test{{ settings.custom_class }}{% endif %}
+    {{ settings.custom_class }}
     group-block
     group-block--height-{{ settings.height }}
     group-block--width-{{ settings.width }}
