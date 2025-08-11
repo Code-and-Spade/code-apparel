@@ -1175,21 +1175,6 @@
                   },
                   "blocks": {}
                 },
-                "swatches_iN6xhU": {
-                  "type": "swatches",
-                  "name": "t:names.swatches",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "product_swatches_alignment": "flex-start",
-                    "product_swatches_alignment_mobile": "flex-start",
-                    "hide_padding": false,
-                    "product_swatches_padding_top": 4,
-                    "product_swatches_padding_bottom": 0,
-                    "product_swatches_padding_left": 0,
-                    "product_swatches_padding_right": 0
-                  },
-                  "blocks": {}
-                },
                 "variant_picker_iz7R6U": {
                   "type": "variant-picker",
                   "name": "t:names.product_variant_picker",
@@ -1209,7 +1194,6 @@
               "block_order": [
                 "product_title_dMgTDL",
                 "price_h6P4AF",
-                "swatches_iN6xhU",
                 "variant_picker_iz7R6U"
               ]
             }
