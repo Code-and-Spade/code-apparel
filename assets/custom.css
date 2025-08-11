@@ -23,7 +23,7 @@ header-menu .overflow-menu::part(list){
 }
 
 /* FOOTER */
-.footer-utilities__text{
+.footer-utilities__text, .footer-utilities a{
     color: #AE9D94;
     font-size: 14px;
 }
