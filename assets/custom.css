@@ -23,6 +23,9 @@ header-menu .overflow-menu::part(list){
 }
 
 /* FOOTER */
+.footer-utilities{
+    flex-direction: column;
+}
 .footer-utilities__group{
     justify-content: center;
 }
