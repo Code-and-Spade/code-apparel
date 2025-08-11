@@ -23,6 +23,13 @@ header-menu .overflow-menu::part(list){
 }
 
 /* FOOTER */
+.email-signup__input::placeholder{
+    color: #AE9D94;
+    padding: 20px;
+}
+.email-signup__input--underline+.email-signup__button--integrated{
+    right: 12px;
+}
 .footer-utilities{
     flex-direction: column!important;
 }
