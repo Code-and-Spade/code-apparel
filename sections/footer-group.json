@@ -585,7 +585,7 @@
           "name": "t:names.footer_utilities",
           "settings": {
             "divider_thickness": 0,
-            "padding-block-start": 12,
+            "padding-block-start": 0,
             "padding-block-end": 0
           },
           "blocks": {
@@ -593,7 +593,7 @@
               "type": "_footer-copyright",
               "static": true,
               "settings": {
-                "font_size": "0.75rem",
+                "font_size": "0.875rem",
                 "case": "none"
               },
               "blocks": {}
@@ -672,14 +672,14 @@
       ],
       "name": "Footer",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 48,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "",
         "color_scheme": "scheme-2",
@@ -687,7 +687,7 @@
         "video_position": "cover",
         "background_image_position": "cover",
         "padding-block-start": 0,
-        "padding-block-end": 48
+        "padding-block-end": 16
       }
     }
   },
