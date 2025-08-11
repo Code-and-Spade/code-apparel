@@ -45,7 +45,7 @@ header-menu .overflow-menu::part(list){
 
 /* PRODUCT CARDS */
 .variant-option__button-label{
-    padding: 2px!important;
-    flex: 0 0 30px!important;
+    padding: 4px!important;
+    flex: 0 0 28px!important;
     min-height: 28px!important;
 }
