@@ -22,6 +22,12 @@ header-menu .overflow-menu::part(list){
     font-weight: 700!important;
 }
 
+/* FOOTER */
+.footer-utilities__text{
+    color: #AE9D94;
+    font-size: 14px;
+}
+
 /* HOME PAGE */
 /* -- code points sec -- */
 .code-points-area .code-point:nth-child(1), .code-points-area .code-point:nth-child(2), .code-points-area .code-point:nth-child(3){
