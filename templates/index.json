@@ -1178,6 +1178,7 @@
                 "swatches_iN6xhU": {
                   "type": "swatches",
                   "name": "t:names.swatches",
+                  "disabled": true,
                   "settings": {
                     "product": "{{ closest.product }}",
                     "product_swatches_alignment": "flex-start",
@@ -1193,7 +1194,6 @@
                 "variant_picker_iz7R6U": {
                   "type": "variant-picker",
                   "name": "t:names.product_variant_picker",
-                  "disabled": true,
                   "settings": {
                     "product": "{{ closest.product }}",
                     "variant_style": "buttons",
