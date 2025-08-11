@@ -326,11 +326,38 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_GraqFT": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>About</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "0.875rem",
+                "font_weight": "500",
+                "line_height": "normal",
+                "letter_spacing": "loose",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "menu_YkdKEA": {
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "main-menu",
+                "menu": "footer-about-menu",
                 "heading": "",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
@@ -349,6 +376,7 @@
             }
           },
           "block_order": [
+            "text_GraqFT",
             "menu_YkdKEA"
           ]
         },
@@ -392,11 +420,38 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_EiC4Mf": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>Orders & Returns</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "0.875rem",
+                "font_weight": "500",
+                "line_height": "normal",
+                "letter_spacing": "loose",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "menu_fjGcCh": {
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "main-menu",
+                "menu": "customer-account-main-menu",
                 "heading": "",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
@@ -415,6 +470,7 @@
             }
           },
           "block_order": [
+            "text_EiC4Mf",
             "menu_fjGcCh"
           ]
         },
@@ -458,6 +514,33 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_qVY9Bj": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>Contact</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "0.875rem",
+                "font_weight": "500",
+                "line_height": "normal",
+                "letter_spacing": "loose",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_VF3fb6": {
               "type": "text",
               "name": "t:names.text",
@@ -487,6 +570,7 @@
             }
           },
           "block_order": [
+            "text_qVY9Bj",
             "text_VF3fb6"
           ]
         }
