@@ -42,3 +42,9 @@ header-menu .overflow-menu::part(list){
 .code-point p{
     min-height: 52px;
 }
+
+/* PRODUCT CARDS */
+.variant-option__button-label{
+    padding: 0;
+    min-height: 24px;
+}
