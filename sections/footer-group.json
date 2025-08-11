@@ -567,11 +567,67 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_fpnnPt": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Call us at<br/><a href=\"tel:8883630256\" title=\"tel:8883630256\">888-363-0256</a></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "font_weight": "400",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_mdHqDQ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Email us at<br/><a href=\"mailto:order@codeapparel.com\" title=\"mailto:order@codeapparel.com\">order@codeapparel.com</a></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "font_weight": "400",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_qVY9Bj",
-            "text_VF3fb6"
+            "text_VF3fb6",
+            "text_fpnnPt",
+            "text_mdHqDQ"
           ]
         }
       },
