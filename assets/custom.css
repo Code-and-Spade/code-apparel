@@ -24,14 +24,14 @@ header-menu .overflow-menu::part(list){
 
 /* FOOTER */
 .footer-utilities{
-    flex-direction: column;
+    flex-direction: column!important;
 }
 .footer-utilities__group{
     justify-content: center;
 }
 .footer-utilities__text, .footer-utilities a{
-    color: #AE9D94;
-    font-size: 14px;
+    color: #AE9D94!important;
+    font-size: 14px!important;
 }
 
 /* HOME PAGE */
