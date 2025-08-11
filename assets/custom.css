@@ -24,11 +24,11 @@ header-menu .overflow-menu::part(list){
 
 /* FOOTER */
 .email-signup__input::placeholder{
-    color: #AE9D94;
+    color: #AE9D94!important;
     padding: 20px;
 }
 .email-signup__input--underline+.email-signup__button--integrated{
-    right: 12px;
+    right: 12px!important;
 }
 .footer-utilities{
     flex-direction: column!important;
