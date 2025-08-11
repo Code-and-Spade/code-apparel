@@ -44,6 +44,11 @@ header-menu .overflow-menu::part(list){
 }
 
 /* PRODUCT CARDS */
+.variant-option__button-label--has-swatch:has(:checked) {
+    outline: none;
+    outline-offset: 0;
+    border: 0;
+}
 .variant-option__button-label{
     padding: 4px!important;
     min-height: 28px!important;
