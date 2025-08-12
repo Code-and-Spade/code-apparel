@@ -71,6 +71,9 @@ header-menu .overflow-menu::part(list){
 .facets--filters-title{
     font-weight: 500;
 }
+.facets__filters-wrapper .checkbox, .facets__filters-wrapper .price-facet__input::placeholder{
+    color: #141414;
+}
 
 /* PRODUCT CARDS */
 .variant-option__button-label--has-swatch:has(:checked) {
