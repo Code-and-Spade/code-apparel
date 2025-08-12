@@ -954,7 +954,7 @@
               "settings": {
                 "cust_img": "{{ closest.collection.metafields.custom.custom_image.value }}",
                 "collection": "{{ closest.collection }}",
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
