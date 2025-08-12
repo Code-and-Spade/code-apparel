@@ -67,6 +67,11 @@ header-menu .overflow-menu::part(list){
     width: 75%;
 }
 
+/* COLLECTION PAGES */
+.facets--filters-title{
+    font-weight: 500;
+}
+
 /* PRODUCT CARDS */
 .variant-option__button-label--has-swatch:has(:checked) {
     outline: none!important;
