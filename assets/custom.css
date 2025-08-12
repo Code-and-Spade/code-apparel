@@ -52,12 +52,13 @@ header-menu .overflow-menu::part(list){
 /* -- find your fit sec -- */
 .my-coll-carousel-area{
     display: flex;
+    column-gap: 96px;
 }
 .my-coll-carousel-area .section-resource-list__content{
     width: 25%;
 }
-.my-coll-carousel-area .find-fit-title{
-    padding-left: 18%;
+.my-coll-carousel-area .find-fit-title .text-block{
+    margin-left: auto;
 }
 .my-coll-carousel-area .resource-list{
     width: 75%;
