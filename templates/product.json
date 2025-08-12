@@ -17,7 +17,7 @@
           "name": "Breadcrumbs",
           "settings": {
             "home_text": "Home",
-            "show_home_icon": true,
+            "show_home_icon": false,
             "separator": "/",
             "background_color": "#ffffff",
             "text_color": "#141414",
@@ -27,17 +27,17 @@
             "separator_color": "#141414",
             "font_size": 16,
             "mobile_font_size": 12,
-            "current_font_weight": "500",
-            "underline_on_hover": false,
-            "current_underline": false,
-            "current_underline_color": "#000f9f",
-            "spacing": 8,
+            "current_font_weight": "400",
+            "underline_on_hover": true,
+            "current_underline": true,
+            "current_underline_color": "#141414",
+            "spacing": 12,
             "mobile_spacing": 6,
-            "separator_size": 14,
-            "padding_top": 16,
-            "padding_bottom": 16,
-            "mobile_padding_top": 12,
-            "mobile_padding_bottom": 12
+            "separator_size": 16,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "mobile_padding_top": 0,
+            "mobile_padding_bottom": 0
           },
           "blocks": {}
         }
@@ -71,8 +71,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "main": {
