@@ -911,10 +911,31 @@
           "block_order": [
             "text_tr6XzC"
           ]
+        },
+        "ai_gen_block_3afc379_wr8KJf": {
+          "type": "ai_gen_block_3afc379",
+          "settings": {
+            "enable_slider": true,
+            "autoplay": false,
+            "autoplay_speed": 3,
+            "show_arrows": true,
+            "show_dots": true,
+            "arrow_size": 40,
+            "arrow_background_color": "#000000",
+            "arrow_color": "#ffffff",
+            "arrow_hover_background_color": "#333333",
+            "arrow_hover_color": "#ffffff",
+            "dot_size": 12,
+            "dot_active_color": "#000000",
+            "dot_inactive_color": "#cccccc",
+            "dot_hover_color": "#666666"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_RDpgjz"
+        "group_RDpgjz",
+        "ai_gen_block_3afc379_wr8KJf"
       ],
       "name": "t:names.custom_section",
       "settings": {
