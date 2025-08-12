@@ -56,7 +56,7 @@ header-menu .overflow-menu::part(list){
 .my-coll-carousel-area .section-resource-list__content{
     width: 25%;
 }
-.my-coll-carousel-area .resource-list__carousel{
+.my-coll-carousel-area .resource-list{
     width: 75%;
 }
 
