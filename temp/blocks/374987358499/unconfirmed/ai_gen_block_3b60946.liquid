@@ -1,6 +1,393 @@
+{% doc %}
+  @prompt
+    create a group of tabbed content. 3 tabs, with option of adding more if needed - up to 5. Each tab should have title and content. first tab should open by default. all color and font choices should use current theme selections. on mobile the tabs should stack in the order of tab, content, tab, content, tab, content
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-tabbed-content-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai-tabbed-content-nav-{{ ai_gen_id }} {
+    display: flex;
+    border-bottom: 1px solid rgb(var(--color-border));
+    margin-bottom: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ai-tabbed-content-tab-{{ ai_gen_id }} {
+    background: none;
+    border: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    color: rgb(var(--color-foreground));
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .ai-tabbed-content-tab-{{ ai_gen_id }}:hover {
+    color: rgb(var(--color-primary));
+  }
+
+  .ai-tabbed-content-tab-{{ ai_gen_id }}.active {
+    color: rgb(var(--color-primary));
+    border-bottom-color: rgb(var(--color-primary));
+  }
+
+  .ai-tabbed-content-tab-{{ ai_gen_id }}:focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+  }
+
+  .ai-tabbed-content-panel-{{ ai_gen_id }} {
+    display: none;
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(var(--color-foreground));
+  }
+
+  .ai-tabbed-content-panel-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  .ai-tabbed-content-mobile-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .ai-tabbed-content-mobile-item-{{ ai_gen_id }} {
+    margin-bottom: 24px;
+  }
+
+  .ai-tabbed-content-mobile-tab-{{ ai_gen_id }} {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(var(--color-foreground));
+    border-bottom: 1px solid rgb(var(--color-border));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ai-tabbed-content-mobile-tab-{{ ai_gen_id }}:focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+  }
+
+  .ai-tabbed-content-mobile-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-tabbed-content-mobile-tab-{{ ai_gen_id }}.active .ai-tabbed-content-mobile-icon-{{ ai_gen_id }} {
+    transform: rotate(180deg);
+  }
+
+  .ai-tabbed-content-mobile-panel-{{ ai_gen_id }} {
+    padding: 16px 0 24px;
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(var(--color-foreground));
+    display: none;
+  }
+
+  .ai-tabbed-content-mobile-panel-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-tabbed-content-desktop-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-tabbed-content-mobile-{{ ai_gen_id }} {
+      display: block;
+    }
+  }
+{% endstyle %}
+
+<tabbed-content-{{ ai_gen_id }}
+  class="ai-tabbed-content-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-tabbed-content-desktop-{{ ai_gen_id }}">
+    <div class="ai-tabbed-content-nav-{{ ai_gen_id }}" role="tablist">
+      {% for i in (1..5) %}
+        {% liquid
+          assign tab_title_key = 'tab_' | append: i | append: '_title'
+          assign tab_content_key = 'tab_' | append: i | append: '_content'
+          assign tab_title = block.settings[tab_title_key]
+          assign tab_content = block.settings[tab_content_key]
+        %}
+        
+        {% if tab_title != blank and tab_content != blank %}
+          <button
+            class="ai-tabbed-content-tab-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
+            id="ai-tabbed-content-tab-{{ ai_gen_id }}-{{ i }}"
+            data-tab="{{ i }}"
+          >
+            {{ tab_title }}
+          </button>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="ai-tabbed-content-panels-{{ ai_gen_id }}">
+      {% for i in (1..5) %}
+        {% liquid
+          assign tab_title_key = 'tab_' | append: i | append: '_title'
+          assign tab_content_key = 'tab_' | append: i | append: '_content'
+          assign tab_title = block.settings[tab_title_key]
+          assign tab_content = block.settings[tab_content_key]
+        %}
+        
+        {% if tab_title != blank and tab_content != blank %}
+          <div
+            class="ai-tabbed-content-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            role="tabpanel"
+            aria-labelledby="ai-tabbed-content-tab-{{ ai_gen_id }}-{{ i }}"
+            id="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
+            data-panel="{{ i }}"
+          >
+            {{ tab_content }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="ai-tabbed-content-mobile-{{ ai_gen_id }}">
+    {% for i in (1..5) %}
+      {% liquid
+        assign tab_title_key = 'tab_' | append: i | append: '_title'
+        assign tab_content_key = 'tab_' | append: i | append: '_content'
+        assign tab_title = block.settings[tab_title_key]
+        assign tab_content = block.settings[tab_content_key]
+      %}
+      
+      {% if tab_title != blank and tab_content != blank %}
+        <div class="ai-tabbed-content-mobile-item-{{ ai_gen_id }}">
+          <button
+            class="ai-tabbed-content-mobile-tab-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}-{{ i }}"
+            data-mobile-tab="{{ i }}"
+          >
+            {{ tab_title }}
+            <svg
+              class="ai-tabbed-content-mobile-icon-{{ ai_gen_id }}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div
+            class="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            id="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}-{{ i }}"
+            data-mobile-panel="{{ i }}"
+          >
+            {{ tab_content }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</tabbed-content-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TabbedContent{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupDesktopTabs();
+        this.setupMobileTabs();
+      }
+
+      setupDesktopTabs() {
+        const tabs = this.querySelectorAll('.ai-tabbed-content-tab-{{ ai_gen_id }}');
+        const panels = this.querySelectorAll('.ai-tabbed-content-panel-{{ ai_gen_id }}');
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const targetPanel = tab.getAttribute('data-tab');
+
+            tabs.forEach((t) => {
+              t.classList.remove('active');
+              t.setAttribute('aria-selected', 'false');
+            });
+
+            panels.forEach((p) => {
+              p.classList.remove('active');
+            });
+
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            const activePanel = this.querySelector(`[data-panel="${targetPanel}"]`);
+            if (activePanel) {
+              activePanel.classList.add('active');
+            }
+          });
+
+          tab.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+              e.preventDefault();
+              const currentIndex = Array.from(tabs).indexOf(tab);
+              let nextIndex;
+
+              if (e.key === 'ArrowLeft') {
+                nextIndex = currentIndex > 0 ? currentIndex - 1 : tabs.length - 1;
+              } else {
+                nextIndex = currentIndex < tabs.length - 1 ? currentIndex + 1 : 0;
+              }
+
+              tabs[nextIndex].focus();
+              tabs[nextIndex].click();
+            }
+          });
+        });
+      }
+
+      setupMobileTabs() {
+        const mobileTabs = this.querySelectorAll('.ai-tabbed-content-mobile-tab-{{ ai_gen_id }}');
+        const mobilePanels = this.querySelectorAll('.ai-tabbed-content-mobile-panel-{{ ai_gen_id }}');
+
+        mobileTabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const targetPanel = tab.getAttribute('data-mobile-tab');
+            const panel = this.querySelector(`[data-mobile-panel="${targetPanel}"]`);
+            const isActive = tab.classList.contains('active');
+
+            tab.classList.toggle('active');
+            tab.setAttribute('aria-expanded', !isActive);
+
+            if (panel) {
+              panel.classList.toggle('active');
+            }
+          });
+        });
+      }
+    }
+
+    customElements.define('tabbed-content-{{ ai_gen_id }}', TabbedContent{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Tabbed content",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_title",
+      "label": "Tab title",
+      "default": "Features"
+    },
+    {
+      "type": "richtext",
+      "id": "tab_1_content",
+      "label": "Tab content",
+      "default": "<p>Discover the amazing features that make our product stand out from the competition.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Tab 2"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_title",
+      "label": "Tab title",
+      "default": "Specifications"
+    },
+    {
+      "type": "richtext",
+      "id": "tab_2_content",
+      "label": "Tab content",
+      "default": "<p>Technical specifications and detailed information about our product.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Tab 3"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_title",
+      "label": "Tab title",
+      "default": "Reviews"
+    },
+    {
+      "type": "richtext",
+      "id": "tab_3_content",
+      "label": "Tab content",
+      "default": "<p>Read what our customers are saying about this product.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Tab 4"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_title",
+      "label": "Tab title"
+    },
+    {
+      "type": "richtext",
+      "id": "tab_4_content",
+      "label": "Tab content"
+    },
+    {
+      "type": "header",
+      "content": "Tab 5"
+    },
+    {
+      "type": "text",
+      "id": "tab_5_title",
+      "label": "Tab title"
+    },
+    {
+      "type": "richtext",
+      "id": "tab_5_content",
+      "label": "Tab content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabbed content"
+    }
+  ]
+}
 {% endschema %}
