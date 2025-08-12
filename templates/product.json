@@ -346,60 +346,7 @@
     "section_ic3rmm": {
       "type": "section",
       "blocks": {
-        "ai_gen_block_3b60946_tXgtnw": {
-          "type": "ai_gen_block_3b60946",
-          "settings": {
-            "tab_1_title": "Description",
-            "tab_1_content": "{{ closest.product.description }}",
-            "tab_2_title": "Size Chart",
-            "tab_2_content": "<p>Technical specifications and detailed information about our product.</p>",
-            "tab_3_title": "Measurements",
-            "tab_3_content": "<p>Read what our customers are saying about this product.</p>",
-            "tab_4_title": "",
-            "tab_4_content": "",
-            "tab_5_title": "",
-            "tab_5_content": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_3b60946_tXgtnw"
-      ],
-      "name": "t:names.custom_section",
-      "settings": {
-        "custom_class": "",
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "section_eKzhPf": {
-      "type": "section",
-      "blocks": {
-        "group_7VFD3T": {
+        "group_t3ewNc": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -438,13 +385,33 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "ai_gen_block_3b60946_Td4irH": {
+              "type": "ai_gen_block_3b60946",
+              "settings": {
+                "tab_1_title": "Description",
+                "tab_1_content": "<p>{{ closest.product.description }}</p>",
+                "tab_2_title": "Size Chart",
+                "tab_2_content": "<p>Technical specifications and detailed information about our product.</p>",
+                "tab_3_title": "Measurements",
+                "tab_3_content": "<p>Read what our customers are saying about this product.</p>",
+                "tab_4_title": "",
+                "tab_4_content": "",
+                "tab_5_title": "",
+                "tab_5_content": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ai_gen_block_3b60946_Td4irH"
+          ]
         }
       },
       "block_order": [
-        "group_7VFD3T"
+        "group_t3ewNc"
       ],
-      "name": "t:names.faq_section",
+      "name": "t:names.custom_section",
       "settings": {
         "custom_class": "",
         "content_direction": "column",
@@ -454,11 +421,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -470,8 +437,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 56,
+        "padding-block-end": 56
       }
     },
     "product_recommendations_qggXJq": {
@@ -684,7 +651,6 @@
     "section_NKiFnk",
     "main",
     "section_ic3rmm",
-    "section_eKzhPf",
     "product_recommendations_qggXJq"
   ]
 }
