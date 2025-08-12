@@ -844,7 +844,7 @@
           "type": "group",
           "name": "t:names.header",
           "settings": {
-            "custom_class": "",
+            "custom_class": "find-fit-title",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
