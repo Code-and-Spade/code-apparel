@@ -86,3 +86,13 @@ header-menu .overflow-menu::part(list){
     padding: 4px!important;
     min-height: 28px!important;
 }
+
+/* PRODUCT PAGE */
+/* -- tabbed sec -- */
+.ai-tabbed-content-nav{
+    justify-content: space-between;
+}
+.ai-tabbed-content-tab{
+    width: 33%;
+    border-bottom: 2px solid #E5E5E5;
+}
