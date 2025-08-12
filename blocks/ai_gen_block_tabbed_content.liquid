@@ -124,11 +124,11 @@
 {% endstyle %}
 
 <tabbed-content-{{ ai_gen_id }}
-  class="ai-tabbed-content-{{ ai_gen_id }}"
+  class="ai-tabbed-content ai-tabbed-content-{{ ai_gen_id }}"
   {{ block.shopify_attributes }}
 >
   <div class="ai-tabbed-content-desktop-{{ ai_gen_id }}">
-    <div class="ai-tabbed-content-nav-{{ ai_gen_id }}" role="tablist">
+    <div class="ai-tabbed-content-nav ai-tabbed-content-nav-{{ ai_gen_id }}" role="tablist">
       {% for i in (1..5) %}
         {% liquid
           assign tab_title_key = 'tab_' | append: i | append: '_title'
@@ -139,7 +139,7 @@
         
         {% if tab_title != blank and tab_content != blank %}
           <button
-            class="ai-tabbed-content-tab-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            class="ai-tabbed-content-tab ai-tabbed-content-tab-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
             role="tab"
             aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
             aria-controls="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
@@ -152,7 +152,7 @@
       {% endfor %}
     </div>
 
-    <div class="ai-tabbed-content-panels-{{ ai_gen_id }}">
+    <div class="ai-tabbed-content-panels ai-tabbed-content-panels-{{ ai_gen_id }}">
       {% for i in (1..5) %}
         {% liquid
           assign tab_title_key = 'tab_' | append: i | append: '_title'
@@ -163,7 +163,7 @@
         
         {% if tab_title != blank and tab_content != blank %}
           <div
-            class="ai-tabbed-content-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            class="ai-tabbed-content-panel ai-tabbed-content-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
             role="tabpanel"
             aria-labelledby="ai-tabbed-content-tab-{{ ai_gen_id }}-{{ i }}"
             id="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
@@ -176,7 +176,7 @@
     </div>
   </div>
 
-  <div class="ai-tabbed-content-mobile-{{ ai_gen_id }}">
+  <div class="ai-tabbed-content-mobile ai-tabbed-content-mobile-{{ ai_gen_id }}">
     {% for i in (1..5) %}
       {% liquid
         assign tab_title_key = 'tab_' | append: i | append: '_title'
@@ -186,7 +186,7 @@
       %}
       
       {% if tab_title != blank and tab_content != blank %}
-        <div class="ai-tabbed-content-mobile-item-{{ ai_gen_id }}">
+        <div class="ai-tabbed-content-mobile-item ai-tabbed-content-mobile-item-{{ ai_gen_id }}">
           <button
             class="ai-tabbed-content-mobile-tab-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
             aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
@@ -208,7 +208,7 @@
             </svg>
           </button>
           <div
-            class="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+            class="ai-tabbed-content-mobile-panel ai-tabbed-content-mobile-panel-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
             id="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}-{{ i }}"
             data-mobile-panel="{{ i }}"
           >
