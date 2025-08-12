@@ -607,17 +607,18 @@
                   },
                   "blocks": {}
                 },
-                "swatches_yPCmba": {
-                  "type": "swatches",
+                "variant_picker_RDkebb": {
+                  "type": "variant-picker",
+                  "name": "t:names.product_variant_picker",
                   "settings": {
                     "product": "{{ closest.product }}",
-                    "product_swatches_alignment": "flex-start",
-                    "product_swatches_alignment_mobile": "flex-start",
-                    "hide_padding": false,
-                    "product_swatches_padding_top": 4,
-                    "product_swatches_padding_bottom": 0,
-                    "product_swatches_padding_left": 0,
-                    "product_swatches_padding_right": 0
+                    "variant_style": "buttons",
+                    "show_swatches": true,
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 8,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
@@ -625,7 +626,7 @@
               "block_order": [
                 "product_title_Dk8awd",
                 "price_AUnDAd",
-                "swatches_yPCmba"
+                "variant_picker_RDkebb"
               ]
             }
           },
