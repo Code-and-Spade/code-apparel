@@ -387,7 +387,7 @@
           },
           "blocks": {
             "ai_gen_block_3b60946_Td4irH": {
-              "type": "ai_gen_block_3b60946",
+              "type": "ai_gen_block_tabbed_content",
               "settings": {
                 "tab_1_title": "Description",
                 "tab_1_content": "<p>{{ closest.product.description }}</p>",
