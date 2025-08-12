@@ -981,7 +981,7 @@
           "skirts",
           "tops",
           "sweatshirts",
-          "dresses"
+          "coordinates"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
