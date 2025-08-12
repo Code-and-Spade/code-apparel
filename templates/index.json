@@ -962,6 +962,7 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
+                "cust_img": "shopify://shop_images/dressy.png",
                 "collection": "{{ closest.collection }}",
                 "image_ratio": "portrait",
                 "toggle_overlay": false,
