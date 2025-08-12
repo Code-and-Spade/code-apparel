@@ -62,7 +62,10 @@
     {{ styles }}
   "
 >
-  <div class="section-resource-list__content">
+  {% if section.settings.layout_type == 'carousel' %}
+    <div class="my-container">
+  {% endif %}  
+    <div class="section-resource-list__content">
     {%- content_for 'blocks' -%}
   </div>
 
@@ -123,7 +126,9 @@
         {% render 'editorial-collection-grid', items: list_items_array %}
     {% endcase %}
   </div>
-
+  {% if section.settings.layout_type == 'carousel' %}
+    </div>
+  {% endif %}
   {% if section.settings.layout_type != 'carousel' and section.settings.carousel_on_mobile %}
     {% liquid
       assign mobile_carousel_gap = section.settings.columns_gap
