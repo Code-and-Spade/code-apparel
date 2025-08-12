@@ -16,7 +16,7 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "Here's what's in your bag",
+            "title": "working on custom typography here. need to add schema to css",
             "show_count": true,
             "type_preset": "custom",
             "font_size": "1.75rem",
