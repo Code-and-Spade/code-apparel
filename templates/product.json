@@ -13,7 +13,7 @@
       "type": "section",
       "blocks": {
         "ai_gen_block_04e9c23_gt34NL": {
-          "type": "ai_gen_block_04e9c23",
+          "type": "ai_gen_block_breadcrumbs",
           "name": "Breadcrumbs",
           "settings": {
             "home_text": "Home",
