@@ -49,6 +49,16 @@ header-menu .overflow-menu::part(list){
 .code-point p{
     min-height: 52px;
 }
+/* -- find your fit sec -- */
+.my-coll-carousel-area{
+    display: flex;
+}
+.my-coll-carousel-area .section-resource-list__content{
+    width: 25%;
+}
+.my-coll-carousel-area .resource-list__carousel{
+    width: 75%;
+}
 
 /* PRODUCT CARDS */
 .variant-option__button-label--has-swatch:has(:checked) {
