@@ -11,40 +11,6 @@
   "sections": {
     "section_NKiFnk": {
       "type": "section",
-      "blocks": {
-        "ai_gen_block_04e9c23_gt34NL": {
-          "type": "ai_gen_block_breadcrumbs",
-          "name": "Breadcrumbs",
-          "settings": {
-            "home_text": "Home",
-            "show_home_icon": false,
-            "separator": "/",
-            "background_color": "#ffffff",
-            "text_color": "#141414",
-            "link_color": "#141414",
-            "link_hover_color": "#ae9d94",
-            "current_color": "#141414",
-            "separator_color": "#141414",
-            "font_size": 16,
-            "mobile_font_size": 12,
-            "current_font_weight": "400",
-            "underline_on_hover": true,
-            "current_underline": true,
-            "current_underline_color": "#141414",
-            "spacing": 12,
-            "mobile_spacing": 6,
-            "separator_size": 16,
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "mobile_padding_top": 0,
-            "mobile_padding_bottom": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_04e9c23_gt34NL"
-      ],
       "name": "t:names.custom_section",
       "settings": {
         "custom_class": "",
@@ -386,11 +352,12 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "ai_gen_block_3b60946_Td4irH": {
+            "ai_gen_block_tabbed_content_QRcLQX": {
               "type": "ai_gen_block_tabbed_content",
+              "name": "Tabbed content",
               "settings": {
                 "tab_1_title": "Description",
-                "tab_1_content": "<p>{{ closest.product.description }}</p>",
+                "tab_1_content": "{{ closest.product.description }}",
                 "tab_2_title": "Size Chart",
                 "tab_2_content": "<p>Technical specifications and detailed information about our product.</p>",
                 "tab_3_title": "Measurements",
@@ -404,7 +371,7 @@
             }
           },
           "block_order": [
-            "ai_gen_block_3b60946_Td4irH"
+            "ai_gen_block_tabbed_content_QRcLQX"
           ]
         }
       },
