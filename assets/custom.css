@@ -70,6 +70,7 @@ header-menu .overflow-menu::part(list){
 /* COLLECTION PAGES */
 .facets--filters-title{
     font-weight: 500;
+    letter-spacing: 0.03em;
 }
 .facets__filters-wrapper .checkbox, .facets__filters-wrapper .price-facet__input::placeholder{
     color: #141414;
