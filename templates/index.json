@@ -936,7 +936,7 @@
               "settings": {
                 "icon_type": "text",
                 "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15\" stroke=\"#010101\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-                "label": "Shop Casual",
+                "label": "Shop {{ closest.collection.metafields.custom.collection_shop_button_text.value }}",
                 "link": "shopify://collections/casual",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
