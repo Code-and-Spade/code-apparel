@@ -35,8 +35,8 @@
   </div>
 
   {% if settings.show_cart_note or settings.show_add_discount_code %}
+    <p class="order-summary">{{ 'Order summary' }}</p>
     <div class="cart-actions">
-      <p>{{ 'Order summary' }}</p>
       {% if settings.show_cart_note %}
         {% render 'cart-note' %}
       {% endif %}
