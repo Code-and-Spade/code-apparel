@@ -16,7 +16,7 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "working on custom typography here. need to add schema to css",
+            "title": "Cart",
             "show_count": true,
             "type_preset": "custom",
             "font_size": "1.75rem",
@@ -64,7 +64,7 @@
       },
       "settings": {
         "section_width": "page-width",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding-block-start": 56,
         "padding-block-end": 0
       }
