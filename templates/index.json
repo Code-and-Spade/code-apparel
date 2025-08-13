@@ -1053,7 +1053,7 @@
                 "alignment": "left",
                 "type_preset": "custom",
                 "font": "var(--font-heading--family)",
-                "font_size": "2.5rem",
+                "font_size": "clamp(1.75rem, 3vw, 2.5rem)",
                 "font_weight": "500",
                 "line_height": "normal",
                 "letter_spacing": "normal",
