@@ -36,6 +36,19 @@
 
   {% if settings.show_cart_note or settings.show_add_discount_code %}
     <div class="cart-actions">
+      {% comment %}
+      {% if settings.show_cart_subtotal %}
+        <div class="cart-subtotal">
+          <h2>Subtotal</h2>
+          <p>{{ cart.subtotal_price | money }}</p>
+        </div>
+      {% endif %}
+       {% endcomment %}
+      <div class="cart-subtotal">
+          <h2>Subtotal</h2>
+          <p>{{ cart.subtotal_price | money }}</p>
+        </div>
+
       {% if settings.show_cart_note %}
         {% render 'cart-note' %}
       {% endif %}
