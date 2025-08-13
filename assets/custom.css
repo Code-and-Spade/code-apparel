@@ -131,7 +131,6 @@ header-menu .overflow-menu::part(list){
     grid-row: 1 / -1;
     align-self: stretch;
     grid-template-rows: subgrid;
-    padding-top: 0;
     position: relative;
  }
   
