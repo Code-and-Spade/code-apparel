@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -19,12 +20,13 @@
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "h2",
+            "type_preset": "custom",
             "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
+            "font_size": "1.75rem",
+            "font_weight": "500",
+            "line_height": "loose",
             "letter_spacing": "normal",
-            "case": "none",
+            "case": "uppercase",
             "wrap": "pretty",
             "color": "",
             "background": false,
@@ -48,6 +50,7 @@
             "type_preset": "rte",
             "font": "var(--font-primary--family)",
             "font_size": "",
+            "font_weight": "400",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -116,6 +119,7 @@
       ],
       "name": "t:names.contact_form",
       "settings": {
+        "custom_class": "",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
