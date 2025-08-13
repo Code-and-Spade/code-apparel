@@ -134,3 +134,9 @@ header-menu .overflow-menu::part(list){
     position: relative;
  }
   
+ /* RESPONSIVE STYLING */
+ @media only and (max-width: 1024px){
+    header-menu .overflow-menu::part(list){
+        gap: 20px;
+    }
+ }
