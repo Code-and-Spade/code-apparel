@@ -112,5 +112,8 @@ header-menu .overflow-menu::part(list){
 .cart__summary-inner{
     padding: 1rem 3rem;
 }
-  
+ .order-summary{
+    font-size: 18px;
+    font-weight: 500;
+ } 
   
