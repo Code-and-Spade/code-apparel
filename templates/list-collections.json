@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "collection_list_Wfgh3m": {
       "type": "collection-list",
@@ -15,6 +16,8 @@
           "type": "group",
           "name": "t:names.header",
           "settings": {
+            "custom_class": "",
+            "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -44,7 +47,7 @@
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 0,
-            "padding-block-end": 48,
+            "padding-block-end": 36,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -57,19 +60,20 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "custom",
                 "font": "var(--font-primary--family)",
-                "font_size": "",
+                "font_size": "1.75rem",
+                "font_weight": "500",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "loose",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 16,
+                "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -86,41 +90,32 @@
           "static": true,
           "settings": {
             "collection": "{{ closest.collection }}",
-            "placement": "below_image",
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
+            "placement": "on_image",
+            "horizontal_alignment": "flex-end",
+            "vertical_alignment": "flex-end",
             "collection_card_gap": 8,
             "inherit_color_scheme": true,
-            "color_scheme": "",
+            "color_scheme": "scheme-5",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_7YgBPU": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
+            "button_yQPW4i": {
+              "type": "button",
+              "name": "t:names.button",
               "settings": {
-                "collection": "{{ closest.collection }}",
+                "icon_type": "text",
+                "icon": "",
+                "label": "Shop {{ closest.collection.title }}",
+                "link": "{{ closest.collection.url }}",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
                 "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             },
@@ -144,7 +139,7 @@
             }
           },
           "block_order": [
-            "collection_title_7YgBPU"
+            "button_yQPW4i"
           ]
         }
       },
@@ -153,11 +148,12 @@
       ],
       "name": "t:names.collections_grid",
       "settings": {
+        "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 3,
         "mobile_columns": "2",
-        "columns_gap": 12,
+        "columns_gap": 24,
         "bento_gap": 8,
         "rows_gap": 24,
         "max_collections": 4,
