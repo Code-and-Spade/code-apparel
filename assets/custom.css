@@ -109,3 +109,8 @@ header-menu .overflow-menu::part(list){
     font-weight: 500;
     text-align: left;
 }
+.cart__summary-inner{
+    padding: 1rem 3rem;
+}
+  
+  
