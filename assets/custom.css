@@ -119,7 +119,7 @@ header-menu .overflow-menu::part(list){
     font-size: 18px;
     font-weight: 500;
  } 
- .sec{
+ .need-help-sec{
     grid-template-columns: 1fr var(--sidebar-width);
     grid-template-rows: min-content min-content 1fr;
     display: grid;
