@@ -244,7 +244,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "need-help-grp",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
@@ -255,7 +255,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "custom",
+            "width": "fill",
             "custom_width": 25,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
