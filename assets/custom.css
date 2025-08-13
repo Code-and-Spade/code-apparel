@@ -119,4 +119,19 @@ header-menu .overflow-menu::part(list){
     font-size: 18px;
     font-weight: 500;
  } 
+ .sec{
+    grid-template-columns: 1fr var(--sidebar-width);
+    grid-template-rows: min-content min-content 1fr;
+    display: grid;
+ }
+ .need-help-grp{
+    display: grid;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: stretch;
+    grid-template-rows: subgrid;
+    padding-top: 0;
+    position: relative;
+ }
   
