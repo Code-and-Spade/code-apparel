@@ -92,6 +92,45 @@
             </tr>
           </thead>
 
+          <thead
+            class="my-cart-header"
+            role="rowgroup"
+          >
+            <tr
+              role="row"
+              class="cart-items__table-row"
+            >
+              <th
+                id="productImage"
+                scope="col"
+                role="columnheader"
+              >
+                {{ 'item.product.title' }}
+              </th>
+              <th
+                id="productInformation"
+                scope="col"
+                role="columnheader"
+              >
+                {{ 'content.product_information' | t }}
+              </th>
+              <th
+                id="quantity"
+                scope="col"
+                role="columnheader"
+              >
+                {{ 'content.quantity' | t }}
+              </th>
+              <th
+                id="productTotal"
+                scope="col"
+                role="columnheader"
+              >
+                {{ 'content.product_total' | t }}
+              </th>
+            </tr>
+          </thead>
+
           <tbody role="rowgroup">
             {% for item in cart.items %}
               <tr
