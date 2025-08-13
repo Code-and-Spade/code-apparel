@@ -307,29 +307,29 @@
               },
               "blocks": {}
             },
-            "group_63akfT": {
+            "group_Q4dVyf": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
                 "custom_class": "",
                 "link": "",
                 "open_in_new_tab": false,
-                "content_direction": "column",
+                "content_direction": "row",
                 "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
+                "horizontal_alignment": "center",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 24,
                 "width": "fill",
-                "custom_width": 100,
+                "custom_width": 50,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
-                "color_scheme": "",
+                "color_scheme": "scheme-5",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -346,12 +346,69 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "button_AVttNF": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "icon_type": "text",
+                    "icon": "",
+                    "label": "Shipping",
+                    "link": "shopify://policies/shipping-policy",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                },
+                "button_8gzMkH": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "icon_type": "text",
+                    "icon": "",
+                    "label": "Returns / Exchanges",
+                    "link": "shopify://policies/refund-policy",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                },
+                "button_DDp744": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "icon_type": "text",
+                    "icon": "",
+                    "label": "Contact",
+                    "link": "shopify://pages/contact",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_AVttNF",
+                "button_8gzMkH",
+                "button_DDp744"
+              ]
             }
           },
           "block_order": [
             "text_AxEbrc",
-            "group_63akfT"
+            "group_Q4dVyf"
           ]
         }
       },
