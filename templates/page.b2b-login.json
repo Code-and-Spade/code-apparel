@@ -36,6 +36,7 @@
       "settings": {
         "page_width": "full",
         "login_type": "passwordless",
+        "featured_image": "shopify://shop_images/9R5A6204copy.jpg",
         "background_width": "cover",
         "background_color": "#e3ddda",
         "base_page_spacing": 60,
