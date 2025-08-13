@@ -49,6 +49,9 @@
           <p>{{ cart.total_price | money }}</p>
         </div>
 
+        {{ cart | json }}
+
+
       {% if settings.show_cart_note %}
         {% render 'cart-note' %}
       {% endif %}
