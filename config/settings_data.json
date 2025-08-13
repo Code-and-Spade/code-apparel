@@ -248,7 +248,7 @@
           "primary": "#141414",
           "primary_hover": "#ae9d94",
           "border": "#141414",
-          "shadow": "rgba(0,0,0,0)",
+          "shadow": "#ffffff",
           "primary_button_background": "#ae9d94",
           "primary_button_text": "#000000",
           "primary_button_border": "#ffffff",
