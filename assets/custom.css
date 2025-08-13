@@ -96,3 +96,13 @@ header-menu .overflow-menu::part(list){
 .ai-tabbed-content-tab{
     width: 33%;
 }
+
+/* CART */
+.my-cart-header .cart-items__table-row{
+    background: #f5f5f5;
+    padding: 20px 0;
+    margin-bottom: 24px;
+}
+.my-cart-header .cart-items__table-row th{
+    font-weight: 500;
+}
