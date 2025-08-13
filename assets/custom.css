@@ -105,4 +105,5 @@ header-menu .overflow-menu::part(list){
 }
 .my-cart-header .cart-items__table-row th{
     font-weight: 500;
+    text-align: left;
 }
