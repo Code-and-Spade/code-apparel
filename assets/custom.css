@@ -102,8 +102,8 @@ header-menu .overflow-menu::part(list){
     background: #f5f5f5;
     padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 24px;
+    padding-bottom: 20px!important;
+    margin-bottom: 24px!important;
 }
 .my-cart-header .cart-items__table-row th{
     font-weight: 500;
