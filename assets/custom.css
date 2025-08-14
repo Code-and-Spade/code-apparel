@@ -244,7 +244,7 @@ header-menu .overflow-menu::part(list){
  }
  @media only screen and (max-width: 549px){
     /* homepage */
-    .my-coll-card-sec .collection-card.collection-card--image-bg{
+    .my-coll-carousel-area .collection-card.collection-card--image-bg{
         --ratio: 16 / 11!important;
     }
  }
