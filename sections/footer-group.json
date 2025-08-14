@@ -246,7 +246,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "footer-middle-logo",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
@@ -311,7 +311,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "footer-middle-menu",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
@@ -405,7 +405,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "footer-middle-menu",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
@@ -499,7 +499,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "footer-middle-menu",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
@@ -593,7 +593,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "footer-middle-menu",
             "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
