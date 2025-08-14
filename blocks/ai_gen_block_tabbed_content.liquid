@@ -181,8 +181,15 @@
             {% if tab_content_type == 'richtext' %}
               {{ tab_content }}
             {% elsif tab_content_type == 'image' %}
-              {% assign img_src = tab_content | image_url: width: 2048 | default: tab_content.url | default: tab_content.src | default: tab_content %}
-              <img src="{{ img_src }}" alt="{{ tab_title | escape }}" loading="lazy">
+              {% assign file_url = tab_content.url | default: tab_content.src | default: tab_content %}
+              
+              {% if file_url contains '.jpg' or file_url contains '.jpeg' or file_url contains '.png' or file_url contains '.gif' or file_url contains '.webp' %}
+                <img src="{{ file_url | image_url: width: 2048 }}" alt="{{ tab_title | escape }}" loading="lazy">
+              {% elsif file_url contains '.pdf' %}
+                <a href="{{ file_url }}" target="_blank" rel="noopener">View PDF</a>
+              {% else %}
+                <a href="{{ file_url }}" target="_blank" rel="noopener">Download file</a>
+              {% endif %}
             {% endif %}
           </div>
         {% endif %}
@@ -232,8 +239,15 @@
             {% if tab_content_type == 'richtext' %}
               {{ tab_content }}
             {% elsif tab_content_type == 'image' %}
-              {% assign img_src = tab_content | image_url: width: 2048 | default: tab_content.url | default: tab_content.src | default: tab_content %}
-              <img src="{{ img_src }}" alt="{{ tab_title | escape }}" loading="lazy">
+              {% assign file_url = tab_content.url | default: tab_content.src | default: tab_content %}
+              
+              {% if file_url contains '.jpg' or file_url contains '.jpeg' or file_url contains '.png' or file_url contains '.gif' or file_url contains '.webp' %}
+                <img src="{{ file_url | image_url: width: 2048 }}" alt="{{ tab_title | escape }}" loading="lazy">
+              {% elsif file_url contains '.pdf' %}
+                <a href="{{ file_url }}" target="_blank" rel="noopener">View PDF</a>
+              {% else %}
+                <a href="{{ file_url }}" target="_blank" rel="noopener">Download file</a>
+              {% endif %}
             {% endif %}
           </div>
         </div>
@@ -241,8 +255,6 @@
     {% endfor %}
   </div>
 </tabbed-content-{{ ai_gen_id }}>
-
-
 
 
 <script>
