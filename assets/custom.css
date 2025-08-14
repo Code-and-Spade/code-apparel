@@ -213,6 +213,12 @@ header-menu .overflow-menu::part(list){
         gap: 18px;
         flex-direction: column;
     }
+    .my-coll-carousel-area .section-resource-list__content{
+        width: 100%;
+    }
+    .my-coll-carousel-area .find-fit-title .text-block{
+        margin-left: 24px;
+    }
     .my-coll-carousel-area .resource-list{
         width: 100%;
     }
