@@ -166,7 +166,7 @@ header-menu .overflow-menu::part(list){
     }
     /* cart */
     .cart-page{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr!important;
     }
     .need-help-sec .section-content-wrapper{
         grid-template-columns: 1fr;
