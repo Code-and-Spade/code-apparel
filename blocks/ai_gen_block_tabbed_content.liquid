@@ -54,7 +54,7 @@
 
   .ai-tabbed-content-panel-{{ ai_gen_id }} p{
     font-family: var(--font-paragraph--family);
-    font-size: 16px;
+    font-size: clamp(.9rem, 1.5vw, 1rem);
     line-height: 1.6;
     color: rgb(var(--color-foreground));
   }
@@ -79,7 +79,7 @@
     text-align: left;
     cursor: pointer;
     font-family: var(--font-paragraph--family);
-    font-size: 16px;
+    font-size: clamp(.9rem, 1.5vw, 1rem);
     font-weight: 500;
     color: rgb(var(--color-foreground));
     border-bottom: 1px solid rgb(var(--color-border));
@@ -106,7 +106,7 @@
   .ai-tabbed-content-mobile-panel-{{ ai_gen_id }} {
     padding: 16px 0 24px;
     font-family: var(--font-paragraph--family);
-    font-size: 14px;
+    font-size: clamp(.9rem, 1.5vw, 1rem);
     line-height: 1.6;
     color: rgb(var(--color-foreground));
     display: none;
