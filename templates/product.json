@@ -360,7 +360,7 @@
                 "tab_1_title": "Description",
                 "tab_1_content": "{{ closest.product.description }}",
                 "tab_2_title": "Size Chart",
-                "tab_2_content": "",
+                "tab_2_content": "{{ closest.product.metafields.custom.size_chart.value }}",
                 "tab_3_title": "Measurements",
                 "tab_3_content": "<p>Read what our customers are saying about this product.</p>",
                 "tab_4_title": "",
