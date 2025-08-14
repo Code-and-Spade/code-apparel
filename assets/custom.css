@@ -154,9 +154,9 @@ header-menu .overflow-menu::part(list){
  @media only screen and (max-width: 1024px){
     /* footer */
     .footer-middle .section-content-wrapper{
-       --flex-wrap: wrap;
+       --flex-wrap: wrap!important;
         gap: 42px 12px;
-       --horizontal-alignment: flex-start;
+       --horizontal-alignment: flex-start!important;
     }
     .footer-middle .footer-middle-menu{
         flex: 0 0 22%;
