@@ -173,12 +173,16 @@
             id="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
             data-panel="{{ i }}"
           >
+            
             {% assign content_value = block.settings[tab_content_key] %}
-  
-            {% if content_value != blank and content_value.src != blank %}
-              <img src="{{ content_value | image_url: 'master' }}" alt="{{ tab_title }}">
-            {% else %}
+            {% assign content_type = block.settings[tab_content_type_key] %}
+
+            {% if content_type == 'richtext' %}
               {{ content_value }}
+            {% elsif content_type == 'image' %}
+              {% if content_value != blank %}
+                <img src="{{ content_value | image_url: 'master' }}" alt="{{ tab_title }}">
+              {% endif %}
             {% endif %}
              
           </div>
@@ -329,6 +333,16 @@
       "default": "Features"
     },
     {
+      "type": "select",
+      "id": "tab_1_content_type",
+      "label": "Content type",
+      "options": [
+        { "value": "richtext", "label": "Rich text" },
+        { "value": "image", "label": "Image" }
+      ],
+      "default": "richtext"
+    },
+    {
       "type": "richtext",
       "id": "tab_1_content",
       "label": "Tab content",
@@ -345,6 +359,16 @@
       "default": "Specifications"
     },
     {
+      "type": "select",
+      "id": "tab_2_content_type",
+      "label": "Content type",
+      "options": [
+        { "value": "richtext", "label": "Rich text" },
+        { "value": "image", "label": "Image" }
+      ],
+      "default": "image"
+    },
+    {
       "type": "image_picker",
       "id": "tab_2_content",
       "label": "Tab content"
@@ -358,6 +382,16 @@
       "id": "tab_3_title",
       "label": "Tab title",
       "default": "Reviews"
+    },
+    {
+      "type": "select",
+      "id": "tab_3_content_type",
+      "label": "Content type",
+      "options": [
+        { "value": "richtext", "label": "Rich text" },
+        { "value": "image", "label": "Image" }
+      ],
+      "default": "richtext"
     },
     {
       "type": "richtext",
