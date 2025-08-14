@@ -244,7 +244,7 @@
       ],
       "name": "t:names.custom_section",
       "settings": {
-        "custom_class": "",
+        "custom_class": "my-coll",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
