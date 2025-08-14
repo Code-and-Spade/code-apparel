@@ -263,6 +263,7 @@
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
+              "disabled": true,
               "settings": {
                 "text": "<p>{{ closest.product.description }}</p>",
                 "width": "100%",
