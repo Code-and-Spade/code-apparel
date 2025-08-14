@@ -131,14 +131,17 @@
   class="ai-tabbed-content ai-tabbed-content-{{ ai_gen_id }}"
   {{ block.shopify_attributes }}
 >
+  <!-- Desktop -->
   <div class="ai-tabbed-content-desktop-{{ ai_gen_id }}">
     <div class="ai-tabbed-content-nav ai-tabbed-content-nav-{{ ai_gen_id }}" role="tablist">
       {% for i in (1..5) %}
         {% liquid
           assign tab_title_key = 'tab_' | append: i | append: '_title'
           assign tab_content_key = 'tab_' | append: i | append: '_content'
+          assign tab_content_type_key = 'tab_' | append: i | append: '_content_type'
           assign tab_title = block.settings[tab_title_key]
           assign tab_content = block.settings[tab_content_key]
+          assign tab_content_type = block.settings[tab_content_type_key]
         %}
         
         {% if tab_title != blank and tab_content != blank %}
@@ -161,8 +164,10 @@
         {% liquid
           assign tab_title_key = 'tab_' | append: i | append: '_title'
           assign tab_content_key = 'tab_' | append: i | append: '_content'
+          assign tab_content_type_key = 'tab_' | append: i | append: '_content_type'
           assign tab_title = block.settings[tab_title_key]
           assign tab_content = block.settings[tab_content_key]
+          assign tab_content_type = block.settings[tab_content_type_key]
         %}
         
         {% if tab_title != blank and tab_content != blank %}
@@ -173,31 +178,27 @@
             id="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
             data-panel="{{ i }}"
           >
-            
-            {% assign content_value = block.settings[tab_content_key] %}
-            {% assign content_type = block.settings[tab_content_type_key] %}
-
-            {% if content_type == 'richtext' %}
-              {{ content_value }}
-            {% elsif content_type == 'image' %}
-              {% if content_value != blank %}
-                <img src="{{ content_value | image_url: 'master' }}" alt="{{ tab_title }}">
-              {% endif %}
+            {% if tab_content_type == 'richtext' %}
+              {{ tab_content }}
+            {% elsif tab_content_type == 'image' %}
+              <img src="{{ tab_content | image_url: 'master' }}" alt="{{ tab_title }}">
             {% endif %}
-             
           </div>
         {% endif %}
       {% endfor %}
     </div>
   </div>
 
+  <!-- Mobile -->
   <div class="ai-tabbed-content-mobile ai-tabbed-content-mobile-{{ ai_gen_id }}">
     {% for i in (1..5) %}
       {% liquid
         assign tab_title_key = 'tab_' | append: i | append: '_title'
         assign tab_content_key = 'tab_' | append: i | append: '_content'
+        assign tab_content_type_key = 'tab_' | append: i | append: '_content_type'
         assign tab_title = block.settings[tab_title_key]
         assign tab_content = block.settings[tab_content_key]
+        assign tab_content_type = block.settings[tab_content_type_key]
       %}
       
       {% if tab_title != blank and tab_content != blank %}
@@ -227,13 +228,18 @@
             id="ai-tabbed-content-mobile-panel-{{ ai_gen_id }}-{{ i }}"
             data-mobile-panel="{{ i }}"
           >
-            {{ tab_content }}
+            {% if tab_content_type == 'richtext' %}
+              {{ tab_content }}
+            {% elsif tab_content_type == 'image' %}
+              <img src="{{ tab_content | image_url: 'master' }}" alt="{{ tab_title }}">
+            {% endif %}
           </div>
         </div>
       {% endif %}
     {% endfor %}
   </div>
 </tabbed-content-{{ ai_gen_id }}>
+
 
 <script>
   (function() {
