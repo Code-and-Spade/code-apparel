@@ -181,11 +181,8 @@
             {% if tab_content_type == 'richtext' %}
               {{ tab_content }}
             {% elsif tab_content_type == 'image' %}
-              {% if tab_content.src %}
-                <img src="{{ tab_content.src | image_url: 'master' }}" alt="{{ tab_title }}">
-              {% else %}
-                <img src="{{ tab_content | image_url: 'master' }}" alt="{{ tab_title }}">
-              {% endif %}
+              {% assign img_src = tab_content | image_url: width: 2048 | default: tab_content.url | default: tab_content.src | default: tab_content %}
+              <img src="{{ img_src }}" alt="{{ tab_title | escape }}" loading="lazy">
             {% endif %}
           </div>
         {% endif %}
@@ -235,11 +232,8 @@
             {% if tab_content_type == 'richtext' %}
               {{ tab_content }}
             {% elsif tab_content_type == 'image' %}
-              {% if tab_content.src %}
-                <img src="{{ tab_content.src | image_url: 'master' }}" alt="{{ tab_title }}">
-              {% else %}
-                <img src="{{ tab_content | image_url: 'master' }}" alt="{{ tab_title }}">
-              {% endif %}
+              {% assign img_src = tab_content | image_url: width: 2048 | default: tab_content.url | default: tab_content.src | default: tab_content %}
+              <img src="{{ img_src }}" alt="{{ tab_title | escape }}" loading="lazy">
             {% endif %}
           </div>
         </div>
@@ -247,6 +241,7 @@
     {% endfor %}
   </div>
 </tabbed-content-{{ ai_gen_id }}>
+
 
 
 
