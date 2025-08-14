@@ -156,7 +156,7 @@ header-menu .overflow-menu::part(list){
         gap: 20px;
     }
  }
- @media only screen and (max-width: 992px){
+ @media only screen and (min-width: 750px) and (max-width: 992px){
     /* footer */
     .footer-middle .section-content-wrapper{
        --flex-wrap: wrap!important;
