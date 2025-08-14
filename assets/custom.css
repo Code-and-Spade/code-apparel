@@ -76,6 +76,9 @@ header-menu .overflow-menu::part(list){
 .facets__filters-wrapper .checkbox, .facets__filters-wrapper .price-facet__input::placeholder{
     color: #141414;
 }
+.facets__pill-label{
+    height: 30px;
+}
 
 /* PRODUCT CARDS */
 .variant-option__button-label--has-swatch:has(:checked) {
@@ -86,6 +89,7 @@ header-menu .overflow-menu::part(list){
 .variant-option__button-label{
     padding: 4px!important;
     min-height: 28px!important;
+    height: 30px;
 }
 
 /* PRODUCT PAGE */
