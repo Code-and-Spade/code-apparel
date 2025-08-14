@@ -186,3 +186,12 @@ header-menu .overflow-menu::part(list){
         min-height: 268px;
     }
  }
+ @media only screen and (max-width: 749px){
+    .code-points-area .code-point:nth-child(1), .code-points-area .code-point:nth-child(2), .code-points-area .code-point:nth-child(3){
+        border-right: none;
+        border-bottom: 1px solid #E3DDDA;
+    }
+    .code-point{
+        min-height: auto;
+    }
+ }
