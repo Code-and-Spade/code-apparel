@@ -137,8 +137,8 @@ header-menu .overflow-menu::part(list){
  /* RESPONSIVE STYLING */
  @media only screen and (max-width: 1247px){
     /* homepage */
-    .code-point p{
-        min-height: 77px;
+    .code-point{
+        min-height: 257px;
     }
     /* cart */
     .my-cart-header .cart-items__table-row #quantity{
