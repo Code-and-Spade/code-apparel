@@ -135,12 +135,18 @@ header-menu .overflow-menu::part(list){
  }
   
  /* RESPONSIVE STYLING */
- @media only screen and (max-width: 1249px){
+ @media only screen and (max-width: 1247px){
+    /* homepage */
     .code-point p{
         min-height: 77px;
     }
+    /* cart */
+    .my-cart-header .cart-items__table-row #quantity{
+        display: none;
+    }
  }
  @media only screen and (max-width: 1024px){
+    /* header */
     header-menu .overflow-menu::part(list){
         gap: 20px;
     }
