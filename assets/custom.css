@@ -151,3 +151,9 @@ header-menu .overflow-menu::part(list){
         gap: 20px;
     }
  }
+ @media only screen and (max-width: 860px){
+    /* homepage */
+    .code-point{
+        min-height: 268px;
+    }
+ }
