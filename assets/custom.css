@@ -156,18 +156,6 @@ header-menu .overflow-menu::part(list){
         gap: 20px;
     }
  }
-@media only screen and (max-width: 992px){
-    /* cart */
-    .cart-page{
-        grid-template-columns: 1fr 1fr!important;
-    }
-    .need-help-sec .section-content-wrapper{
-        grid-template-columns: 1fr;
-    }
-    .need-help-grp{
-        grid-column: 1;
-    }
- }
  @media only screen and (min-width: 750px) and (max-width: 992px){
     /* footer */
     .footer-middle .section-content-wrapper{
@@ -180,6 +168,16 @@ header-menu .overflow-menu::part(list){
     }
     .footer-middle .footer-middle-logo{
         flex: 0 0 100%;
+    }
+    /* cart */
+    .cart-page{
+        grid-template-columns: 1fr 1fr!important;
+    }
+    .need-help-sec .section-content-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .need-help-grp{
+        grid-column: 1;
     }
  }
  @media only screen and (max-width: 860px){
@@ -210,5 +208,12 @@ header-menu .overflow-menu::part(list){
     /* about page */
     .about-sec-b .section-content-wrapper{
         flex-flow: column-reverse;
+    }
+    /* cart */
+    .need-help-sec .section-content-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .need-help-grp{
+        grid-column: 1;
     }
  }
