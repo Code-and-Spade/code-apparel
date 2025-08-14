@@ -158,6 +158,12 @@ header-menu .overflow-menu::part(list){
         gap: 42px 12px;
        --horizontal-alignment: flex-start;
     }
+    .footer-middle .layout-panel-flex--row>.group-block--width-fill{
+        flex: 0 0 22%;
+    }
+    .footer-middle .layout-panel-flex--row>.group-block--width-fill::nth-child(1){
+        flex: 0 0 100%;
+    }
  }
  @media only screen and (max-width: 860px){
     /* homepage */
