@@ -173,7 +173,11 @@
             id="ai-tabbed-content-panel-{{ ai_gen_id }}-{{ i }}"
             data-panel="{{ i }}"
           >
-            {{ tab_content }}
+            {% if block.settings[tab_content_key] contains 'cdn.shopify.com' %}
+              <img src="{{ block.settings[tab_content_key] | img_url: 'master' }}" alt="{{ tab_title }}">
+            {% else %}
+              {{ tab_content | raw }}
+            {% endif %}
           </div>
         {% endif %}
       {% endfor %}
