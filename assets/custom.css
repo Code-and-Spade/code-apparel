@@ -249,3 +249,10 @@ header-menu .overflow-menu::part(list){
         --ratio: 16 / 11!important;
     }
  }
+ @media only screen and (max-width: 414px){
+    /* cart */
+    .cart-page__summary{
+        padding: 0;
+        margin: 24px 0 0;
+    }
+ }
