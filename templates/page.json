@@ -22,7 +22,7 @@
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-primary--family)",
-            "font_size": "1.75rem",
+            "font_size": "clamp(1.5rem, 2.25vw, 1.75rem)",
             "font_weight": "500",
             "line_height": "normal",
             "letter_spacing": "loose",
