@@ -209,6 +209,13 @@ header-menu .overflow-menu::part(list){
     .code-point{
         min-height: auto;
     }
+    .my-coll-carousel-area{
+        gap: 18px;
+        flex-direction: column;
+    }
+    .my-coll-carousel-area .resource-list{
+        width: 100%;
+    }
     /* about page */
     .about-sec-b .section-content-wrapper{
         flex-flow: column-reverse;
