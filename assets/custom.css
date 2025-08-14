@@ -225,7 +225,7 @@ header-menu .overflow-menu::part(list){
     .need-help-grp{
         grid-column: 1;
     }
-    .need-help-btn-area{
+    .need-help-btn-area .group-block-content{
         flex-flow: row;
     }
  }
