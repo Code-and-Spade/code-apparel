@@ -50,8 +50,8 @@ header-menu .overflow-menu::part(list){
 .code-points-area .code-point:nth-child(1), .code-points-area .code-point:nth-child(2), .code-points-area .code-point:nth-child(3){
     border-right: 1px solid #E3DDDA;
 }
-.code-point p{
-    min-height: 52px;
+.code-point{
+    min-height: 215px;
 }
 /* -- find your fit sec -- */
 .my-coll-carousel-area{
