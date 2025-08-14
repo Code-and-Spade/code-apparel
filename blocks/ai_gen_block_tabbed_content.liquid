@@ -176,7 +176,7 @@
             {% assign content_value = block.settings[tab_content_key] %}
   
   {% if block.settings[tab_content_key] contains 'cdn.shopify.com' %}
-    <img src="{{ content_value | img_url: 'master' }}" alt="{{ tab_title }}">
+    <img src="{{ content_value | image_url: 'master' }}" alt="{{ tab_title }}">
   {% else %}
     {{ content_value }}
   {% endif %}
