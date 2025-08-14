@@ -187,6 +187,17 @@ header-menu .overflow-menu::part(list){
     }
  }
  @media only screen and (max-width: 749px){
+    /* footer */
+    .footer-middle .section-content-wrapper{
+        --gap: 18px;
+    }
+    .footer-middle-menu__item .group-block-content{
+        --gap: 8px;
+    }
+    .footer-middle .menu__item+.menu__item{
+        margin-block-start: 6px;
+    }
+    /* homepage */
     .code-points-area .code-point:nth-child(1), .code-points-area .code-point:nth-child(2), .code-points-area .code-point:nth-child(3){
         border-right: none;
         border-bottom: 1px solid #E3DDDA;
