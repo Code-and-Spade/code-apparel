@@ -256,6 +256,11 @@ header-menu .overflow-menu::part(list){
         padding-block: 10px;
         padding-inline: 14px;
     }
+    /* homepage */
+    .my-coll-carousel-area .ollection-card__content{
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
     /* cart */
     .cart-page__summary{
         padding: 0;
