@@ -205,4 +205,8 @@ header-menu .overflow-menu::part(list){
     .code-point{
         min-height: auto;
     }
+    /* about page */
+    .about-sec-b .section-content-wrapper{
+        flex-flow: column-reverse;
+    }
  }
