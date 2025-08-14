@@ -96,10 +96,11 @@ header-menu .overflow-menu::part(list){
 /* PRODUCT PAGE */
 /* -- tabbed sec -- */
 .ai-tabbed-content-nav{
-    justify-content: space-between;
+    justify-content: center;
+    gap: 16px;
 }
 .ai-tabbed-content-tab{
-    width: 33%;
+    width: calc(33% - 16px);
 }
 
 /* CART */
