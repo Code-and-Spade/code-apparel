@@ -189,10 +189,10 @@ header-menu .overflow-menu::part(list){
  @media only screen and (max-width: 749px){
     /* footer */
     .footer-middle .section-content-wrapper{
-        --gap: 18px;
+        --gap: 18px!important;
     }
     .footer-middle-menu__item .group-block-content{
-        --gap: 8px;
+        --gap: 8px!important;
     }
     .footer-middle .menu__item+.menu__item{
         margin-block-start: 6px;
