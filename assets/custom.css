@@ -151,7 +151,7 @@ header-menu .overflow-menu::part(list){
         gap: 20px;
     }
  }
- @media only screen and (max-width: 1024px){
+ @media only screen and (max-width: 992px){
     /* footer */
     .footer-middle .section-content-wrapper{
        --flex-wrap: wrap!important;
@@ -163,6 +163,16 @@ header-menu .overflow-menu::part(list){
     }
     .footer-middle .footer-middle-logo{
         flex: 0 0 100%;
+    }
+    /* cart */
+    .cart-page{
+        grid-template-columns: 1fr 1fr;
+    }
+    .need-help-sec .section-content-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .need-help-grp{
+        grid-column: 1;
     }
  }
  @media only screen and (max-width: 860px){
