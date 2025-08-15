@@ -313,13 +313,13 @@
     "section_bzrAgD": {
       "type": "section",
       "blocks": {
-        "selleasy_lb_upsell_widget_pag_TXExmj": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pag/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "selleasy_lb_upsell_widget_pal_x63pxg": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pal/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
         }
       },
       "block_order": [
-        "selleasy_lb_upsell_widget_pag_TXExmj"
+        "selleasy_lb_upsell_widget_pal_x63pxg"
       ],
       "name": "t:names.custom_section",
       "settings": {
