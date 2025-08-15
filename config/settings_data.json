@@ -86,6 +86,15 @@
     "variant_button_radius": 0,
     "variant_button_width": "default-width-buttons",
     "content_for_index": [],
+    "blocks": {
+      "18228966181090706294": {
+        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": false,
+        "settings": {
+          "storefrontAccessToken": ""
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
