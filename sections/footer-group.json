@@ -687,7 +687,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Call us at<br/><a href=\"tel:8883630256\" title=\"tel:8883630256\">888-363-0256</a></p>",
+                "text": "<p>Call us at<br/><a href=\"tel:8883630256\" title=\"tel:8455210466\">845-521-0466</a></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
