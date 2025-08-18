@@ -714,7 +714,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Email us at<br/><a href=\"mailto:order@codeapparel.com\" title=\"mailto:roizy@shopcodeapparel.com\">roizy@shopcodeapparel.com</a></p>",
+                "text": "<p>Email us at<br/><a href=\"mailto:order@codeapparel.com\" title=\"mailto:info@shopcodeapparel.com\">info@shopcodeapparel.com</a></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
