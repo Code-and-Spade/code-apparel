@@ -48,9 +48,7 @@
       urlRegex: /\/account/g,
       goTo: "/index", // page to redirect logged in users to
     },
-    /* Add the below to your SparkLayer Core Script */
-showTranslations: true,
-/* End of code */
+
     auth: {
       user: {{ customer.email | json }},
       token: {{ customer.metafields.sparklayer.authentication | json }},
