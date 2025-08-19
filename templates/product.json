@@ -260,6 +260,10 @@
               },
               "block_order": []
             },
+            "selleasy_lb_upsell_widget_cpag_mgHMCc": {
+              "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-cpag/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+              "settings": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -294,6 +298,7 @@
             "variant_picker_R3rGDr",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
+            "selleasy_lb_upsell_widget_cpag_mgHMCc",
             "text_aEtTtq"
           ]
         }
