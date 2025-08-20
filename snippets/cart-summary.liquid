@@ -90,20 +90,6 @@
           All sale items are final.</label>
 </div>
 
-<script>
-
-document.getElementById('checkout').addEventListener('click', function(e) {
-    // Check if the checkbox is unchecked
-    if (!document.querySelector('.myCheckbox').checked) {
-        // Prevent form submission
-        e.preventDefault();
-        // Show alert
-        alert('Check I have read and agreed to Code Apparel shipping and return policies.');
-    }
-});
-  
-</script>
-
 <div class="cart__ctas">
   <button
     type="submit"
@@ -124,6 +110,21 @@ document.getElementById('checkout').addEventListener('click', function(e) {
     </div>
   {% endif %}
 </div>
+
+{% comment %} add checkbox disclaimer script{% endcomment %}
+<script>
+
+document.getElementById('checkout').addEventListener('click', function(e) {
+    // Check if the checkbox is unchecked
+    if (!document.querySelector('.myCheckbox').checked) {
+        // Prevent form submission
+        e.preventDefault();
+        // Show alert
+        alert('Check I have read and agreed to Code Apparel shipping and return policies.');
+    }
+});
+  
+</script>
 
 {% stylesheet %}
   .cart-actions {
