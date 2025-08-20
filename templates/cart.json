@@ -184,59 +184,6 @@
     "cart-section": {
       "type": "main-cart",
       "blocks": {
-        "group_FxPmdF": {
-          "type": "group",
-          "name": "t:names.group",
-          "settings": {
-            "custom_class": "disclaimer-grp",
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fit-content",
-            "custom_width": 25,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-1",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 10,
-            "padding-block-end": 10,
-            "padding-inline-start": 20,
-            "padding-inline-end": 20
-          },
-          "blocks": {
-            "custom_liquid_mwJ4ae": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "<div class=\"cus-check\">\n            <input class=\"myCheckbox\" type=\"checkbox\">\n          <label>I have read and agree to Code Apparel <a href=\"policy\">shipping</a> and  <a href=\"policies/refund-policy\">return policies</a>.\n          All returns are subject to a restocking fee and all sale items are final.\n         <strong>In case we are out of a specific item, the rest of your order will still be shipped.</strong></label>\n</div>\n\n<script>\n\ndocument.getElementById('checkout').addEventListener('click', function(e) {\n    // Check if the checkbox is unchecked\n    if (!document.querySelector('.myCheckbox').checked) {\n        // Prevent form submission\n        e.preventDefault();\n        // Show alert\n        alert('Check I have read and agree to Leader Kids shipping and return policies.');\n    }\n});\n  \n</script>"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "custom_liquid_mwJ4ae"
-          ]
-        },
         "cart-page-title": {
           "type": "_cart-title",
           "disabled": true,
@@ -283,9 +230,6 @@
           "blocks": {}
         }
       },
-      "block_order": [
-        "group_FxPmdF"
-      ],
       "settings": {
         "section_width": "page-width",
         "color_scheme": "scheme-1",
