@@ -83,6 +83,27 @@
     </div>
   </div>
 </div>
+{% comment %} add checkbox disclaimer{% endcomment %}
+    <div class="cus-check">
+            <input class="myCheckbox" type="checkbox">
+          <label>I have read and agree to Code Apparel <a href="policy">shipping</a> and  <a href="policies/refund-policy">return policies</a>.
+          All returns are subject to a restocking fee and all sale items are final.
+         <strong>In case we are out of a specific item, the rest of your order will still be shipped.</strong></label>
+</div>
+
+<script>
+
+document.getElementById('checkout').addEventListener('click', function(e) {
+    // Check if the checkbox is unchecked
+    if (!document.querySelector('.myCheckbox').checked) {
+        // Prevent form submission
+        e.preventDefault();
+        // Show alert
+        alert('Check I have read and agree to Leader Kids shipping and return policies.');
+    }
+});
+  
+</script>
 
 <div class="cart__ctas">
   <button
