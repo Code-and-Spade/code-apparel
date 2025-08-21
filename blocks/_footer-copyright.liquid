@@ -13,6 +13,13 @@
     &copy; {{ 'now' | date: '%Y' }}
     {{ shop.name | link_to: routes.root_url -}}
     {%comment %}, {{ powered_by_link }}{% endcomment %}
+
+      {% if block.settings.powered_by_text != blank and block.settings.powered_by_link != blank %}
+      — <a href="{{ block.settings.powered_by_link }}" target="_blank" rel="noopener">
+        {{ block.settings.powered_by_text }}
+      </a>
+    {% endif %}
+
   </span>
 </div>
 
@@ -68,7 +75,19 @@
         }
       ],
       "default": "none"
+    },
+    {
+      "type": "text",
+      "id": "powered_by_text",
+      "label": "Powered by text",
+      "default": "Powered by Code and Spade"
+    },
+    {
+      "type": "url",
+      "id": "powered_by_link",
+      "label": "Powered by link"
     }
+
   ]
 }
 {% endschema %}
