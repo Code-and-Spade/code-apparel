@@ -851,7 +851,7 @@
                 "font_size": "0.875rem",
                 "case": "none",
                 "powered_by_text": "Powered by Code and Spade",
-                "powered_by_link": ""
+                "powered_by_link": "https://www.codeandspade.com/"
               },
               "blocks": {}
             },
