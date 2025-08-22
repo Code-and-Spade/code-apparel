@@ -263,7 +263,7 @@ header-menu .overflow-menu::part(list){
  @media only screen and (max-width: 414px){
     /* general */
     .button, .button-secondary, button.shopify-payment-button__button--unbranded{
-        --text-align: left;
+        /*--text-align: left;*/
         padding-block: 10px;
         padding-inline: 14px;
     }
