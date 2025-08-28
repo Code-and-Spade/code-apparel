@@ -264,7 +264,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Faigy's Boutique -1278 43rd street Brooklyn NY 11219</p><p>My Dream Dress -1279 52nd street Brooklyn NY 11219</p><p>Oasis by Japparel-3021 avenue J Brooklyn NY 11210</p>",
+                        "text": "<p>Faigy's Boutique -1 278 43rd street, Brooklyn NY 11219</p><p>My Dream Dress -1279 52nd street, Brooklyn NY 11219</p><p>Oasis by Japparel - 3021 Avenue J, Brooklyn NY 11210</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -364,7 +364,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>S&w Monroe -icon mall</p>",
+                        "text": "<p>S&W Monroe -icon mall</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -464,7 +464,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Hats to Hose-7002 reisterstown rd Baltimore MD 21215</p>",
+                        "text": "<p>Hats to Hose-7002 Reisterstown rd Baltimore MD 21215</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
