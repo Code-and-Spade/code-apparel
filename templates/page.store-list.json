@@ -131,7 +131,7 @@
               "name": "t:names.text",
               "settings": {
                 "text": "<p>My Dream Dress -1279 52nd street Brooklyn NY 11219</p><p>Faigy's Boutique -1278 43rd street Brooklyn NY 11219</p><p>Oasis by Japparel-3021 avenue J Brooklyn NY 11210</p><p>Majestic -Arzei Habira 49/10 knisa beis first floor, Jerusalem Israel</p><p>Hats to Hose-7002 reisterstown rd Baltimore MD 21215</p><p>S&w Monroe -icon mall</p>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
