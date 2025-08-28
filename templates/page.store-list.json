@@ -464,7 +464,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Hats to Hose-7002 Reisterstown rd Baltimore MD 21215</p>",
+                        "text": "<p>Hats to Hose-7002 Reisterstown Rd, Baltimore MD 21215</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
