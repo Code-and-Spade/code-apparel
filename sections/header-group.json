@@ -18,7 +18,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "Free shipping for orders over $350",
+            "text": "Free shipping on all orders",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
